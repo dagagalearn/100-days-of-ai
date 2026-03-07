@@ -1,0 +1,10 @@
+import numpy as np
+Random_M = np.random.rand(3,3)
+print(Random_M)
+print(np.sum(Random_M))
+print(np.mean(Random_M))
+print(np.max(Random_M))
+print(Random_M + 5)
+print(Random_M > 0.7)
+random_m = np.random.rand(3,3)
+print(Random_M @ random_m)
