@@ -13,14 +13,4 @@ sns.pairplot(
 plt.suptitle("Iris Pairplot", y=1.02)
 plt.show()
 
-corr = iris.corr()
-sns.heatmap(
-    corr,
-    annot=True,
-    fmt=".2f",
-    cmap='coolwarm',
-    linewidths=0.5,
-    square=True
-)
-plt.title("Iris Feature Correlation Heatmap")
-plt.show()
+
