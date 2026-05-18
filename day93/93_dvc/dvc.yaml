@@ -1,0 +1,10 @@
+stages:
+  train:
+    cmd: python prepare.py
+    deps:
+      - data.csv
+    outs:
+      - titanic_model.joblib
+    metrics:
+      - accuracy_metrics.json:
+          cache: false
