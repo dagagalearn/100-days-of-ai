@@ -4,6 +4,15 @@ import numpy as np
 import joblib
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],     
+    allow_credentials=True,
+    allow_methods=["*"],    
+    allow_headers=["*"],    
+)
+
 model = joblib.load("titanic_model.joblib")
 @app.get("/")
 def home():
