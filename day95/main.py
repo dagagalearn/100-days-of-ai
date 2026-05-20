@@ -23,6 +23,7 @@ def health():
   }
 
 class Passenger(BaseModel):
+  PassengerId: int
   Pclass: int
   Age: float
   SibSp: int
@@ -38,7 +39,8 @@ def predict(passenger: Passenger):
         passenger.SibSp,
         passenger.Parch,
         passenger.Fare,
-        passenger.Sex_male
+        passenger.Sex_male,
+        passenger.PassengerId
     ]])
   
   prediction = model.predict(features)[0]
