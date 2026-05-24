@@ -5,7 +5,7 @@ Built as the capstone project for the 100 Days of AI challenge.
 
 ## Project Structure
 
-- data.csv                  → Titanic dataset (891 passengers)
+- data.csv                  → Titanic dataset (1,309 passengers)
 - train_model.py            → Trains and saves the model
 - main.py                   → FastAPI server
 - model_v2.joblib            → Trained RandomForest model
