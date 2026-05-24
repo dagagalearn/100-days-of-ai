@@ -1,0 +1,15 @@
+stages:
+  train:
+    cmd:
+      - python train_model.py
+    deps:
+      - train_model.py
+      - data.csv
+    outs:
+      - model_features.joblib
+      - scaler.joblib
+      - titanic_model.joblib
+    metrics:
+      - metrics.json:
+          cache: false
+            
