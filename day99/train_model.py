@@ -4,6 +4,7 @@ import pandas as pd
 import joblib
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
+import json
 
 data = pd.read_csv("data.csv")
 
@@ -40,3 +41,8 @@ loaded_scaler = joblib.load("scaler.joblib")
 
 print(f"Features: {len(loaded_features)}: {loaded_features}")
 print(f"Model accuracy: {loaded_model.score(X_test,y_test)}")
+
+with open("metrics.json","w") as f:
+    json.dump({"accuracy":model.score(X_test,y_test)},f)
+
+print("Saved!")
