@@ -8,7 +8,7 @@ Built as the capstone project for the 100 Days of AI challenge.
 - data.csv                  → Titanic dataset 
 - train_model.py            → Trains and saves the model
 - main.py                   → FastAPI server
-- model_v2.joblib            → Trained RandomForest model
+- titanic_model.joblib            → Trained RandomForest model
 - model_features.joblib      → Feature names for prediction
 - requirements.txt          → Python dependencies
 - render.yaml               → Render deployment config
