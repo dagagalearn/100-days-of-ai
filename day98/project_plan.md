@@ -10,6 +10,7 @@ Built as the capstone project for the 100 Days of AI challenge.
 - main.py                   → FastAPI server
 - titanic_model.joblib            → Trained RandomForest model
 - model_features.joblib      → Feature names for prediction
+- scaler.joblib                →  Scaler 
 - requirements.txt          → Python dependencies
 - render.yaml               → Render deployment config
 - dvc.yaml                  → DVC pipeline (optional)
@@ -30,7 +31,7 @@ Built as the capstone project for the 100 Days of AI challenge.
 1. Clone the repo:
    ```bash
    git clone https://github.com/dagagalearn/100-days-of-ai.git
-   cd 100-days-of-ai/day100
+   cd 100-days-of-ai/day99
    ```
 
 2. Install dependencies:
