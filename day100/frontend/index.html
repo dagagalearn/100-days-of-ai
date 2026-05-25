@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Predictor Model | Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Titanic <span class="green">Survivorship</span> Predictor</h1>
+    <form id="predictForm">
+        <span class="title">Fill the following form</span>
+        
+        <label for="pclass">Pclass:</label><br>
+        <input type="number" placeholder="Pclass (1, 2, or 3)..." id="pclass" required><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" placeholder="Age..." id="age" required><br>
+
+        <label for="sibsp">SibSp:</label><br>
+        <input type="number" placeholder="SibSp..." id="sibsp" required><br>
+
+        <label for="parch">Parch:</label><br>
+        <input type="number" placeholder="Parch..." id="parch" required><br>
+
+        <label for="fare">Fare:</label><br>
+        <input type="number" placeholder="e.g. 7.25" id="fare" step="0.01" required> <br>
+
+        <label for="sex">Sex:</label><br>
+        <select id="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <button type="submit" id="submit-btn">Predict</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
